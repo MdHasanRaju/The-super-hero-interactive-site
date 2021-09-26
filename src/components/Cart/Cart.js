@@ -10,18 +10,20 @@ const Cart = (props) => {
     const total = cart.reduce(totalReducer, 0)
     
     return (
-        <div >
-            <h3>Doctors Added: {cart.length}</h3>
-            <h5>Total Cost: ${total}</h5>
-            <br />
-            <h4>Doctors Name:</h4>
-            
-            <ul className="user-name">
-                {
-                    cart.map(person => <Person key={person.id} name={person.name}></Person>)
-                }
-            </ul>
-        </div>
+      <div className="cart">
+        <h2>
+          <i class="fas fa-user"></i> Doctors Added: {cart.length}
+        </h2>
+        <h2>Total Cost: ${total}</h2>
+        <br />
+        <h3>Doctors Name:</h3>
+
+        <ul className="user-name">
+          {cart.map((person) => (
+            <Person key={person.id} name={person.name}></Person>
+          ))}
+        </ul>
+      </div>
     );
 };
 <li>
