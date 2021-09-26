@@ -15,7 +15,7 @@ const User = (props) => {
         <h4>Salary: ${salary}</h4>
         <h4>Country: {address}</h4>
         <br />
-        
+
         <button
           className="btn"
           onClick={() => props.handleAddToCart(props.user)}

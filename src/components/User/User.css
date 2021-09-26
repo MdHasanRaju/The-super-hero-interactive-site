@@ -6,9 +6,7 @@
     cursor: pointer;
     color: black;
 }
-.user:hover {
-    transform: translate(2px, 2px);
-}
+
 .user img {
     height: 100px;
     width: 100px;
