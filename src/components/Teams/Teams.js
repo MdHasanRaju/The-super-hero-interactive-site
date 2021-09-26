@@ -16,7 +16,6 @@ const Teams = () => {
     const handleAddToCart = (users) => {
         const newCart = [...cart, users]
         setCart(newCart)
-        console.log(newCart);
     }
 
     return (

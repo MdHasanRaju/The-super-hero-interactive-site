@@ -3,18 +3,33 @@ import './User.css';
 
 const User = (props) => {
     // console.log(props.handleAddToCart);
-    const {name, img, salary, profession, address} = props.user;
+    const {name, img, salary, profession, age, address} = props.user;
     return (
       <div className="user">
         <div>
           <img src={img} />
         </div>
-        <h3>Name: {name}</h3>
+        <h3>{name}</h3>
+        <h3>Age: {age}</h3>
         <h4>Profession: {profession}</h4>
         <p>Salary: {salary}</p>
         <p>Country: {address}</p>
         <br />
-        <button className="btn" onClick={() => props.handleAddToCart(props.user)}>Add to Cart</button>
+        <button
+          className="btn"
+          onClick={() => props.handleAddToCart(props.user)}
+        >
+          <i class="fas fa-cart-plus"></i>Add to Cart
+        </button>
+        <br />
+        <div className="social-icon">
+          <a href="#">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </div>
       </div>
     );
 };
