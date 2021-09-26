@@ -2,8 +2,8 @@ import React from 'react';
 import './User.css';
 
 const User = (props) => {
-    // console.log(props.handleAddToCart);
     const {name, img, salary, profession, age, address} = props.user;
+
     return (
       <div className="user">
         <div>
@@ -12,9 +12,10 @@ const User = (props) => {
         <h3>{name}</h3>
         <h3>Age: {age}</h3>
         <h4>Profession: {profession}</h4>
-        <p>Salary: {salary}</p>
-        <p>Country: {address}</p>
+        <h4>Salary: ${salary}</h4>
+        <h4>Country: {address}</h4>
         <br />
+        
         <button
           className="btn"
           onClick={() => props.handleAddToCart(props.user)}
@@ -22,6 +23,7 @@ const User = (props) => {
           <i class="fas fa-cart-plus"></i>Add to Cart
         </button>
         <br />
+
         <div className="social-icon">
           <a href="#">
             <i class="fab fa-facebook-square"></i>
@@ -30,6 +32,7 @@ const User = (props) => {
             <i class="fab fa-twitter-square"></i>
           </a>
         </div>
+
       </div>
     );
 };

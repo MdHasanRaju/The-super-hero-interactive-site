@@ -1,8 +1,14 @@
 .user {
-    background-color: burlywood;
+    background-color: #0CA2D1;
     text-align: center;
     border-radius: 10px;
     padding: 15px;
+    cursor: pointer;
+    color: black;
+    
+}
+.user:hover {
+    transform: translate(2px, 2px);
 }
 .user img {
     height: 100px;
@@ -12,12 +18,17 @@
 }
 .btn {
     width: 125px;
-    padding: 5px;
+    padding: 8px;
     cursor:pointer;
-    background-color: lightblue;
-    color: black;
-    border: 1px solid blue;
+    background-color: white;
+    color: #0C0C0C;
+    border: 1px solid transparent;
     border-radius: 10px;
+    transition: .2s;
+}
+.btn:hover {
+    background-color: #0C0C0C;
+    color: white;
 }
 .social-icon {
     display: flex;
@@ -26,6 +37,6 @@
 }
 .social-icon a{
     display: inline-block;
-    color: rebeccapurple;
+    color: black;
     font-size: 30px;
 }
