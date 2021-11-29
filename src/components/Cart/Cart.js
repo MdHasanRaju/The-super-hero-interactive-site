@@ -5,7 +5,7 @@ import './Cart.css';
 const Cart = (props) => {
     const {cart} = props;
 
-    // reduce for estimating total
+    // used reduce for estimating total
     const totalReducer = (previousValue, currentValue) => previousValue + parseFloat(currentValue.salary);
     const total = cart.reduce(totalReducer, 0)
     
